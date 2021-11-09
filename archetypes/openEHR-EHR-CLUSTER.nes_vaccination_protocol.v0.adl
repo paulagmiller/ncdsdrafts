@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=39632ffb-4654-4b8b-88e3-c3dd591335fd)
+archetype (adl_version=1.4; uid=775f9dd8-3e93-4c88-bc6e-30a3c30c5a92)
 	openEHR-EHR-CLUSTER.nes_vaccination_protocol.v0
 
 concept
@@ -27,13 +27,13 @@ description
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"Apperta UK">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"d9049a06d83e9fe445058c69523c3a16">
-		["build_uid"] = <"091ece2b-3aed-4750-91c5-3d320577bb22">
+		["MD5-CAM-1.0.1"] = <"737DCDBDA865A67C1A76E5523BB31D0D">
+		["build_uid"] = <"d3e2e698-4139-4020-998f-ae1f7a75ccc6">
 		["revision"] = <"0.0.1-alpha">
 	>
 
