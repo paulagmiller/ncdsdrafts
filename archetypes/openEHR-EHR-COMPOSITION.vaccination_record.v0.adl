@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=7ea0f4a6-5742-499c-be52-8efae3c307cc)
+archetype (adl_version=1.4; uid=7d509a35-b477-4ddb-a001-60bdb7717408)
 	openEHR-EHR-COMPOSITION.vaccination_record.v0
 
 concept
@@ -14,20 +14,22 @@ description
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"ian@freshehr.com">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			copyright = <"© Apperta Foundation">
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8f0bafdfbd41be6e117bd2febdd6252b">
-		["build_uid"] = <"341cb4ec-0ea5-3e33-a97e-cced81d33c75">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"863626A39C0307FD80604D88B28C6DB0">
+		["build_uid"] = <"609967b5-4473-47f2-8633-888f206b836d">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
