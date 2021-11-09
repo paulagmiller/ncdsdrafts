@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=c6298f30-7cf2-4a1a-9961-80af46500613)
+archetype (adl_version=1.4; uid=211f7339-6d7c-473e-8c20-f3cf775307f7)
 	openEHR-EHR-CLUSTER.nes_vaccination_event_details.v0
 
 concept
@@ -21,19 +21,21 @@ description
 			purpose = <"This cluster is to support specific additional details about vaccination events needed by NHS Education Scotland to allow the recording of vaccination events and the mapping of data from NES NCDS vaccination database to the NES openEHR CDR
 ">
 			keywords = <"vaccine, vaccination, immunise, immunisation, immunization, immunize, booster, dose, stage", ...>
+			copyright = <"© Apperta Foundation">
 			use = <"This cluster is intended to be used in the 'Additional Details' cluster slot of the Medication Management archetype as employed in the NES Vaccination Record template to support the specific internal use cases.">
 			misuse = <"It may not be appropriate to use this cluster in other jurisdictions
 ">
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bd2384eb585986af3b916d2ec1cfa070">
-		["build_uid"] = <"d4e41a61-e862-36f9-92b3-6a023daaec68">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"D8AEF5D497A1E066073B8A960D388465">
+		["build_uid"] = <"8f2f510e-a1dc-4117-b450-a90c20e92484">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
