@@ -1,0 +1,133 @@
+archetype (adl_version=1.4; uid=89f46f94-20a1-48e0-8bd5-75fad80d521d)
+	openEHR-EHR-CLUSTER.nes_immunisation_protocol.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-08-12">
+		["name"] = <"Dr Paul Miller">
+		["organisation"] = <"NES Digital Service">
+		["email"] = <"paul.miller@nes.scot.nhs.uk">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Can be used as part of the Vaccine Administration event to capture recurrent data elements.">
+			keywords = <"Vaccines, vaccination, immunisation, immunise", ...>
+			copyright = <"© Apperta Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"586fd9e688a8f355b4c31a2d8202d63e">
+		["build_uid"] = <"091ece2b-3aed-4750-91c5-3d320577bb22">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- nes_vaccination_protocol
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Series name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Series doses
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Series doses description
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Target disease
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Subject agreement to immunisation
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Vaccination centre
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Appointment ID
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Trial ID
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0010] occurrences matches {0..*} matches {    -- Vaccination centre details
+				include
+					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.organisation\.v0/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"nes_vaccination_protocol">
+					description = <"NDS_Immunisation_Protocol. a small cluster to support recording additional details about immunization events.">
+				>
+				["at0001"] = <
+					text = <"Target disease">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Series name">
+					description = <"Local name or description for the immunisation e.g 'Influenza' 'Hepatitis A/B' 'Hepatitis A and Typhoid'">
+				>
+				["at0004"] = <
+					text = <"Subject agreement to immunisation">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Appointment ID">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Series doses">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Series doses description">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Trial ID">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Vaccination centre">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Vaccination centre details">
+					description = <"">
+				>
+			>
+		>
+	>
