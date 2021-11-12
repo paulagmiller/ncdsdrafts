@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"737DCDBDA865A67C1A76E5523BB31D0D">
+		["MD5-CAM-1.0.1"] = <"5753a77ead8cd0f41fbed0a2d1d7d8af">
 		["build_uid"] = <"d3e2e698-4139-4020-998f-ae1f7a75ccc6">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -63,6 +63,11 @@ definition
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Subject agreement to vaccination
 				value matches {
 					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Country of vaccination
+				value matches {
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Vaccination centre
@@ -131,6 +136,10 @@ ontology
 				["at0010"] = <
 					text = <"Vaccination centre details">
 					description = <"A cluster slot to allow more details of the vaccination centre.">
+				>
+				["at0011"] = <
+					text = <"Country of vaccination">
+					description = <"">
 				>
 			>
 		>
