@@ -32,7 +32,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5753a77ead8cd0f41fbed0a2d1d7d8af">
+		["MD5-CAM-1.0.1"] = <"3090a76c3814d122a5c126c41b9d5b7c">
 		["build_uid"] = <"d3e2e698-4139-4020-998f-ae1f7a75ccc6">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -139,7 +139,7 @@ ontology
 				>
 				["at0011"] = <
 					text = <"Country of vaccination">
-					description = <"">
+					description = <"To record the country of vaccination, ideally using a terminology value set.">
 				>
 			>
 		>
