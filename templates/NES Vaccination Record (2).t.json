@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.1.0",
+      "sem_ver" : "3.2.0",
       "build_uid" : "c4d04b87-044f-4c48-88a0-45be5303603a",
-      "MD5-CAM-1.0.1" : "c1e0f3999d6faf41a78819533bc230a0",
+      "MD5-CAM-1.0.1" : "a47905d7fca47a278da55068c9aafcf8",
       "PARENT:MD5-CAM-1.0.1" : "863626A39C0307FD80604D88B28C6DB0"
     },
     "details" : {
@@ -1205,7 +1205,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1254,7 +1253,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "occurrences" : "0..0",
           "nodeId" : "at0018.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1499,6 +1497,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0015.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1645,6 +1644,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2025,18 +2025,6 @@
             "text" : "Vaccination reassessed",
             "description" : "The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."
           },
-          "at0015.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.1",
-            "text" : "Vaccination not done",
-            "description" : "Administration of the medication has been ceased during the period of the intended course."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Vaccination completed",
-            "description" : "The medication course has been completed as planned."
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -2063,6 +2051,30 @@
             "text" : "Dose number",
             "description" : "The sequence number specific to the pathway step being recorded.",
             "comment" : "For example: Vaccine sequence number."
+          },
+          "at0018.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018.1",
+            "text" : "Vaccine dose not given",
+            "description" : "An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Vaccine dose administered",
+            "description" : "A single administration of the medication has taken place."
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Vaccination course stopped",
+            "description" : "Administration of the medication has been ceased during the period of the intended course."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Vaccination course completed",
+            "description" : "The medication course has been completed as planned."
           }
         },
         "nb" : {
