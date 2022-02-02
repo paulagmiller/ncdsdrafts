@@ -4,7 +4,10 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2021-11-08"
+      "date" : "2021-11-08",
+      "name" : "Dr Paul Miller",
+      "organisation" : "NHS Education Scotland",
+      "email" : "paul.miller@nhs.scot"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
@@ -19,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "c4d04b87-044f-4c48-88a0-45be5303603a",
-      "MD5-CAM-1.0.1" : "c85fa4e52572dc27ed75bea87675730b",
+      "MD5-CAM-1.0.1" : "540c13e8f5e9ab27f12e32451d549ad6",
       "PARENT:MD5-CAM-1.0.1" : "863626A39C0307FD80604D88B28C6DB0"
     },
     "details" : {
